@@ -14,7 +14,14 @@ public class MainActivity extends AppCompatActivity {
         // variables
 
         int a=-5;
+        long myLong=10;
         double mydouble=2.5;
+        boolean myBoolean=true;
+
+        String myString="Arjun";
+
+
+
 
 
     }
