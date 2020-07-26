@@ -11,25 +11,44 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Arithmetic Operator +,-,*,/,%
+        int a = 5;
 
-        int a =5;
-        a+=2;
-        int b=2;
-        b++; // 3
-        b--;//2
+        if (a > 3) {
+            System.out.println("A is greater than 3");
+        } else {
+            System.out.println("A is lesser than 3");
 
-        // relational or comparison operator <.<=,>,>=,==,!=
-
-        boolean answaer =a<b;
+        }
 
 
-        // logical operator ||,&&,
+        if(a>0){
+            System.out.println("A is positive");
+        }
+        else if(a<0){
+            System.out.println("A is negative");
+        }
 
-        boolean ans=a==5 || b==2;
+        else{
+            System.out.println("A is zero");
+        }
 
 
 
+
+        switch (a){
+            case 1:
+                System.out.println("A is one");
+                break;
+
+            case 2:
+                System.out.println("A is two");
+                break;
+            case 5:
+                System.out.println("A is five");
+                break;
+
+
+        }
 
     }
 }
