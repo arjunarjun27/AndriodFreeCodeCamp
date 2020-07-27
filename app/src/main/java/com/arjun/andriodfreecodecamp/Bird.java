@@ -9,14 +9,27 @@ public class Bird extends Animal {
         super(name, color, legs, hasTale);
         this.wings = wings;
     }
+    
 
+    // this is also polymortphim same method in child and parent behave differently
     @Override
     public void eat(String food) {
-        System.out.println("Chewing"+food);
+        System.out.println("Chewing" + food);
     }
 
-    public void fly(){
-        System.out.println(this.getName()+" is flying");
+
+    // polymorphism -many forms
+    public void fly() {
+        System.out.println(this.getName() + " is flying");
+    }
+
+    public void fly(int speed) {
+        System.out.println(this.getName() + " is flying" + speed);
+    }
+
+
+    public void fly(String name) {
+        System.out.println(this.getName() + " is flying" + name);
     }
 
     public int getWings() {
