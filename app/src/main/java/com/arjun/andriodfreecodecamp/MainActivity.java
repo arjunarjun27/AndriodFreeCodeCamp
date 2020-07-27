@@ -23,5 +23,20 @@ public class MainActivity extends AppCompatActivity {
         Car mercedens=new Car("Mercendenz",2,"Silver",new Engine("Renault",8000));
         System.out.println(mercedens.getEngine().getModel());
 
+
+
+
+        // null means nothing
+
+        Car car=null;
+        car.getColor(); // throw a nullpointerexception
+
+        if(car!=null){
+            System.out.println("is there");
+        }
+        else{
+            System.out.println("null");
+
+        }
     }
 }
