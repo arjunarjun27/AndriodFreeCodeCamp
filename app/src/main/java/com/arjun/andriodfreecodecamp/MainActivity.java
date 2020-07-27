@@ -11,7 +11,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-// oops
+
+
+        Phone iphone=new Phone("iphone",24,2,10);
+        iphone.getMemoryRam();
+        iphone.playMusic();
+
+
+        Phone pixel=new Phone("pixel",3);
+        pixel.getMemoryRam();
 
 
     }
