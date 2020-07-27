@@ -38,5 +38,23 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("null");
 
         }
+
+
+        // final
+
+        final int a=1;
+      //  a=a+1 // copile time error
+
+
+
+        final  Engine engine=new Engine("renault",8000);
+        //engine=new Engine("suzuki",500);  you cannot change the whole instance but you can change the properties
+        engine.setModel("honda");
+
+
+
+
+
+
     }
 }
