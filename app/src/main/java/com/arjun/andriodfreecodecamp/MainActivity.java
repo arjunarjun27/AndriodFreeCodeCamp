@@ -12,14 +12,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        Bird phoenix=new Bird("Nina","Golden",2,true,2);
+        System.out.println(phoenix.getName());
+        phoenix.eat("Meat");
 
-        Phone iphone=new Phone("iphone",24,2,10);
-        iphone.getMemoryRam();
-        iphone.playMusic();
-
-
-        Phone pixel=new Phone("pixel",3);
-        pixel.getMemoryRam();
 
 
     }
