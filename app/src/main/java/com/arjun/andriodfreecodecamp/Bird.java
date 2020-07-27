@@ -9,7 +9,7 @@ public class Bird extends Animal {
         super(name, color, legs, hasTale);
         this.wings = wings;
     }
-    
+
 
     // this is also polymortphim same method in child and parent behave differently
     @Override
