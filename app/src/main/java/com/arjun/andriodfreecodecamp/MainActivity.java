@@ -55,7 +55,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        ArrayList<Student> students=new ArrayList<>();
+        students.add(new Student("arjun",26));
+        students.add(new Student("kumar",29));
 
+        for(Student s:students){
+            System.out.println(s.getName());
+        }
 
     }
 }
