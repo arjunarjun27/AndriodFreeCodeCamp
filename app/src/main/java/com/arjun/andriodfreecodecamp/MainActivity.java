@@ -12,5 +12,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+        TestClass.name="Arjun";
+
+        TestClass testClass=new TestClass(25,"White");
+        System.out.println("Name :"+testClass.getName());
+
+        TestClass testClass2=new TestClass(25,"White");
+        System.out.println("Name :"+testClass2.getName());
+
+
+        TestClass.printSomething();
+
+
     }
 }
