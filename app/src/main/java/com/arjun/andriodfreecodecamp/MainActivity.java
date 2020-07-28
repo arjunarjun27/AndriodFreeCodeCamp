@@ -12,5 +12,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        int a = 5;
+        int b = 0;
+
+        try {
+            int answer = 5 / 0;
+        } catch (ArithmeticException e) {
+            e.printStackTrace();
+        }
+
+
+        String name = null;
+        try {
+            name.equals("arjun");
+
+        } catch (NullPointerException e) {
+
+        }
     }
 }
