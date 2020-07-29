@@ -90,10 +90,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         final Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-
                 for (int i = 0; i < 10; i++) {
                     mProgressbar.incrementProgressBy(10);
                     SystemClock.sleep(500);    // like a thread.sleep available in android.os
