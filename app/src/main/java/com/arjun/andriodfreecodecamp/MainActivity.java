@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -48,6 +49,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        int id=rgMartialStatus.getCheckedRadioButtonId();
+        switch (id){
+            case R.id.single:
+                Toast.makeText(MainActivity.this, "Single", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.married:
+                Toast.makeText(MainActivity.this, "Married", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.relationship:
+                Toast.makeText(MainActivity.this, "Relationship", Toast.LENGTH_SHORT).show();
+
+                break;
+        }
         rgMartialStatus.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
