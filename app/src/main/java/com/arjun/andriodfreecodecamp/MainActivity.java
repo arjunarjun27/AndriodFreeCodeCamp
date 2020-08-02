@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recyclerview);
 
         ArrayList<Contact> contacts = new ArrayList<>();
-        contacts.add(new Contact("arjun", "", ""));
+        contacts.add(new Contact("arjun", "arjun@gmail.com", "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/tiger-woods-2019-masters-tournament-champion-april-22-2019-sports-illustrated-cover.jpg"));
 
-        contacts.add(new Contact("mohan", "", ""));
-        contacts.add(new Contact("anandaraman", "", ""));
-        contacts.add(new Contact("ashok", "", ""));
-        contacts.add(new Contact("murali", "", ""));
+        contacts.add(new Contact("mohan", "mohan@gmail.com", "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/make-it-reign-how-the-resilient-royals-ran-off-with-a-world-november-09-2015-sports-illustrated-cover.jpg"));
+        contacts.add(new Contact("anandaraman", "anandaraman@gmail.com", "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/muhammad-ali-1965-world-heavyweight-title-july-26-1999-sports-illustrated-cover.jpg"));
+        contacts.add(new Contact("ashok", "ashok@gmail.com", "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/chicago-bulls-michael-jordan-1998-nba-finals-june-22-1998-sports-illustrated-cover.jpg"));
+        contacts.add(new Contact("murali", "murali@gmail.com", "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/goat-greatest-of-all-teams-february-11-2019-sports-illustrated-cover.jpg"));
 
 
         ContactsRecyclerViewAdapter contactsRecyclerViewAdapter=new ContactsRecyclerViewAdapter(this);
@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView.setAdapter(contactsRecyclerViewAdapter);
 
-       // mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         //mRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
-        mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        //mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
 
 
     }
