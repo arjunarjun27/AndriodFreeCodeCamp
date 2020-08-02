@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView.setAdapter(contactsRecyclerViewAdapter);
 
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+       // mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         //mRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
-        //mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
 
 
     }
